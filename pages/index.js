@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Avatar from "../components/Avatar";
-import { MicrophoneIcon, ViewGridIcon } from "@heroicons/react/solid";
+import { MicrophoneIcon } from "@heroicons/react/solid";
 import { SearchIcon } from "@heroicons/react/outline";
 import Image from "next/image";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
@@ -14,26 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* Header */}
-      <header className="flex justify-between w-full p-5  text-sm text-gray-700 ">
-        {/* left section */}
-        <div className="flex space-x-4 items-center">
-          <p className="link">About</p>
-          <p className="link">Store</p>
-        </div>
-
-        {/* right section */}
-        <div className="flex space-x-4 items-center">
-          <p className="link">Gmail</p>
-          <p className="link">Image</p>
-
-          {/* Icon */}
-          <ViewGridIcon className="h-10 w-10 p-2 hover:bg-gray-100 rounded-full cursor-pointer" />
-
-          {/* Avatar */}
-          {/* creating own avatar component */}
-          <Avatar />
-        </div>
-      </header>
+      <Header />
 
       {/* Body */}
       <form className="flex flex-col items-center mt-44 flex-grow w-4/5">
